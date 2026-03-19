@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: black;
+  color: white;
+}
+
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  height: 300px;
+  background: url('https://images.unsplash.com/photo-1523275335684-37898b6baf30') center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+}
+
+button {
+  background: black;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.cart {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: white;
+  width: 250px;
+  height: 100%;
+  padding: 20px;
+  border-left: 2px solid black;
+}
