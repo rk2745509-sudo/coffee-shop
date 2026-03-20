@@ -2,34 +2,55 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Shop Website</title>
+  <title>Choco Cafe</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-  <h1>My Store</h1>
+  <h1>☕ Choco Cafe</h1>
   <nav>
-    <a href="#">Home</a>
-    <a href="#">Shop</a>
-    <a href="#">Contact</a>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Contact</a>
     <span id="cart-count">🛒 0</span>
   </nav>
 </header>
 
-<section class="hero">
-  <h2>New Collection</h2>
-  <p>Shop the latest products</p>
+<section id="home" class="hero">
+  <h2>Fresh Coffee Everyday</h2>
+  <p>Enjoy the best taste</p>
 </section>
 
-<section class="products" id="product-list">
+<section id="menu">
+  <h2>Our Menu</h2>
+  <div class="products" id="products"></div>
 </section>
 
-<div class="cart" id="cart">
-  <h2>Cart</h2>
-  <ul id="cart-items"></ul>
-</div>
+<section class="cart-section">
+  <h2>Your Order</h2>
+  <ul id="cart"></ul>
+  <h3 id="total">Total: ₹0</h3>
+  <button onclick="placeOrder()">Place Order</button>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>📍 karaikudi </p>
+  <p>📞 +91 9876543210</p>
+</section>
+
+<footer>
+  <p>© 2026 Choco Cafe</p>
+</footer>
 
 <script src="script.js"></script>
+<div id="order-summary"></div>
+<div id="orderModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div id="modal-body"></div>
+  </div>
+</div>
 </body>
 </html>
